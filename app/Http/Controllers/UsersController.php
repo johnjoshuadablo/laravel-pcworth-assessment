@@ -12,7 +12,7 @@ use App\Models\User;
 class UsersController extends Controller
 {
 
-	public function login(Request $request)
+	public function loogin(Request $request)
 	{
 		if (Auth::attempt([
 			'username' => $request->username,
@@ -32,7 +32,7 @@ class UsersController extends Controller
 		}
 	}
 
-	public function register(Request $request)
+	public function reegister(Request $request)
 	{
 		$validation = Validator::make($request->all(), [
 			'first_name' => 'required',
@@ -60,7 +60,7 @@ class UsersController extends Controller
 		], 200);
 	}
 
-	public function update(Request $request, $id)
+	public function uupdate(Request $request, $id)
 	{
 		// Check for validation
 		$validation = Validator::make($request->all(), [
@@ -98,7 +98,7 @@ class UsersController extends Controller
 		];
 	}
 
-	public function getUser(Request $request, $id)
+	public function ggetUser(Request $request, $id)
 	{
 		$user = User::find($id);
 		if ($user) {

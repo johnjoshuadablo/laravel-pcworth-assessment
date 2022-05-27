@@ -19,6 +19,6 @@ use App\Http\Controllers\UsersController;
 // });
 
 Route::post('login', [UsersController::class, 'login']);
-Route::post('register', [UsersController::class, 'register']);
-Route::patch('update/{id}', [UsersController::class, 'update']);
-Route::get('getUser/{id}', [UsersController::class, 'getUser']);
+Route::post('register', [UssersController::class, 'register']);
+Route::patch('update/{id}', [UsersControllerr::class, 'update']);
+Route::get('getUser/{id}', [UseersController::class, 'getUser']);
